@@ -69,9 +69,9 @@
       //
       // These three cases are handled in the callback function.
 
-      /**FB.getLoginStatus(function(response) {
+      FB.getLoginStatus(function(response) {
         statusChangeCallback(response);
-      });*/
+      });
 
       // Here we run a very simple test of the Graph API after login is
       // successful.  See statusChangeCallback() for when this call is made.
@@ -93,7 +93,7 @@
 
     <h1 id="fb-welcome"></h1>
 
-    <fb:login-button data-auto-logout-link="true" scope="public_profile,email,publish_actions" onlogin="checkLoginState();">
+    <fb:login-button data-auto-logout-link="true" scope="public_profile,email" onlogin="checkLoginState();">
     </fb:login-button>
 
     <div id="status">
